@@ -1,0 +1,44 @@
+{
+  "name": "sajjadkazazi/imanoor-gateway",
+  "homepage": "https://github.com/sajjadkazazi/imanoor-gateway",
+  "description": "A Laravel package for connecting to all Iraninan payment  gateways",
+  "version": "2.0",
+  "keywords": [
+
+    "payment",
+    "gateway",
+    "port",
+    "bank",
+    "saman",
+    "sadad",
+     "asan-pardakht"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "sajjad kazazi",
+      "email": "sajjad.kazazi@yahoo.com"
+    }
+  ],
+  "require": {
+    "nesbot/carbon": "*",
+    "paypal/rest-api-sdk-php": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Larabookir\\Gateway\\": "src/",
+      "Larabookir\\Gateway\\Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Larabookir\\Gateway\\GatewayServiceProvider"
+      ],
+      "aliases": {
+        "Gateway": "Larabookir\\Gateway\\Gateway"
+      }
+    }
+  }
+}
